@@ -24,7 +24,7 @@
 		<!--  @{/tipo_projetos/salvar}
 		th:action="${departamento.id == null} ? @{/departamentos/salvar} : @{/departamentos/editar}"
 		-->
-			<form th:action="${departamento.id == null} ? @{/departamentos/salvar} : @{/departamentos/editar}" 
+			<form th:action="@{/tipo_projetos/salvar}" 
 				th:object="${tipoProjeto}"
 				method="POST">
 				<div class="form-row">
